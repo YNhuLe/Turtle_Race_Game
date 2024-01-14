@@ -17,6 +17,9 @@ class Player(Turtle):
         """Tell the turtle to go up """
         self.forward(MOVE_DISTANCE)
 
+    def go_down(self):
+        self.backward(MOVE_DISTANCE)
+
     def go_to_start(self):
         """Get the player to back to the starting position"""
         self.goto(STARTING_POSITION)
