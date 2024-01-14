@@ -24,4 +24,5 @@ class CarManager:
 
     def move_car(self):
         for car in self.all_cars:
+            """Move the cars from the right hand-side of the screen to the left hand-side"""
             car.backward(STARTING_MOVE_DISTANCE)
