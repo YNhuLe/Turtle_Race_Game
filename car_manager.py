@@ -9,6 +9,7 @@ MOVE_DISTANCE = 10
 class CarManager:
     def __init__(self):
         self.all_cars = []
+        self.car_speed = STARTING_MOVE_DISTANCE
 
     def create_car(self):
         """This method create the car in random colors and with random position in the right hand-side of the screen"""
@@ -26,3 +27,7 @@ class CarManager:
         for car in self.all_cars:
             """Move the cars from the right hand-side of the screen to the left hand-side"""
             car.backward(STARTING_MOVE_DISTANCE)
+
+    def level_up(self):
+        """Speed up the cars when the turtle level up"""
+        self.car_speed += MOVE_DISTANCE

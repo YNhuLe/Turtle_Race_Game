@@ -1,4 +1,4 @@
-from turtle import Turtle
+from turtle import Turtle, Screen
 
 STARTING_POSITION = (0, -280)
 MOVE_DISTANCE = 10
@@ -13,12 +13,24 @@ class Player(Turtle):
         self.go_to_start()
         self.setheading(90)
 
-    def go_up(self):
-        """Tell the turtle to go up """
-        self.forward(MOVE_DISTANCE)
+    def move(self, direction):
+        """move the turtle to the up, down, left and right"""
+        if direction == "up":
+            self.forward(MOVE_DISTANCE)
+        elif direction == "down":
+            self.backward(MOVE_DISTANCE)
+        elif direction == "left":
+            x = self.xcor()
+            x -= MOVE_DISTANCE
+            self.setx(x)
+        elif direction == "right":
+            x = self.xcor()
+            x += MOVE_DISTANCE
+            self.setx(x)
 
-    def go_down(self):
-        self.backward(MOVE_DISTANCE)
+    def go_right(self):
+        x = self.xcor()
+        y = -20
 
     def go_to_start(self):
         """Get the player to back to the starting position"""
