@@ -47,8 +47,8 @@ class Player(Turtle):
 
     def game_over_notification(self):
         """Notify game over to player when the turtle hit the object"""
-        title = "game Over"
-        message = "You done"
+        title = "OOP!!!"
+        message = "GAME OVER"
 
         #Display the noification on the Turtle window
         notification_turtle = Turtle()

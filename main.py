@@ -14,6 +14,7 @@ pygame.init()
 
 player = Player()
 car_manager = CarManager()
+scoreboard = Scoreboard()
 
 screen.listen()
 
@@ -50,6 +51,7 @@ while game_is_on:
     if player.is_at_finish_line():
         player.go_to_start()
         car_manager.level_up()
+        scoreboard.increase_level()
 
 pygame.mixer.music.stop()
 screen.exitonclick()
