@@ -2,8 +2,6 @@ import pygame
 import time
 from turtle import Screen
 
-
-
 from player import Player
 from car_manager import CarManager
 from scoreboard import Scoreboard
@@ -27,7 +25,6 @@ def move(direction):
 # Map keys corresponding directions
 key_directions = {"Left": "left", "Right": "right", "Up": "up", "Down": "down"}
 
-
 for key, direction in key_directions.items():
     screen.onkey(lambda dir=direction: move(dir), key)
 
@@ -45,7 +42,8 @@ while game_is_on:
     # Detect the collision of the turtle with the cars
     for car in car_manager.all_cars:
         if car.distance(player) < 20:
-            pygame.display.set_caption()
+
+            player.game_over_notification()
             game_is_on = False
 
     # Detect if the turtle successfully cross the road
