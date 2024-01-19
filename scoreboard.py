@@ -23,3 +23,8 @@ class Scoreboard(Turtle):
         """increase the level everytime the turtle cross the screen successfully"""
         self.level += 1
         self.update_scoreboard()
+
+    def game_over(self):
+        """pop up the game over when the turtle hit the car"""
+        self.goto(0,0)
+        self.write("GAME OVER", align="center", font=FONT)
