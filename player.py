@@ -1,7 +1,5 @@
 from turtle import Turtle
 
-
-
 STARTING_POSITION = (0, -280)
 MOVE_DISTANCE = 10
 FINISH_LINE_Y = 280
@@ -44,19 +42,3 @@ class Player(Turtle):
             return True
         else:
             return False
-
-    def game_over_notification(self):
-        """Notify game over to player when the turtle hit the object"""
-        title = "game Over"
-        message = "You done"
-
-        #Display the noification on the Turtle window
-        notification_turtle = Turtle()
-        notification_turtle.hideturtle()
-        notification_turtle.penup()
-        notification_turtle.goto(0,50)
-        notification_turtle.write(f"{title}\n{message}", align="center", font=("Arial", 16, "normal"))
-
-        #Show notification for the 2 seconds
-        self.getscreen().update()
-        self.getscreen().ontimer(notification_turtle.clear(),10000)

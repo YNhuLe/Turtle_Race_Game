@@ -14,6 +14,7 @@ pygame.init()
 
 player = Player()
 car_manager = CarManager()
+scoreboard = Scoreboard()
 
 screen.listen()
 
@@ -42,14 +43,14 @@ while game_is_on:
     # Detect the collision of the turtle with the cars
     for car in car_manager.all_cars:
         if car.distance(player) < 20:
-
-            player.game_over_notification()
             game_is_on = False
+            scoreboard.game_over()
 
     # Detect if the turtle successfully cross the road
     if player.is_at_finish_line():
         player.go_to_start()
         car_manager.level_up()
+        scoreboard.increase_level()
 
 pygame.mixer.music.stop()
 screen.exitonclick()
