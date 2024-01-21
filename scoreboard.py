@@ -1,6 +1,6 @@
 from turtle import Turtle
 
-FONT = ("Courier", 24, "normal")
+FONT = ("Courier", 18, "normal")
 
 
 class Scoreboard(Turtle):
@@ -24,7 +24,9 @@ class Scoreboard(Turtle):
         self.level += 1
         self.update_scoreboard()
 
-    def game_over(self):
+    def game_over(self, level, name):
         """pop up the game over when the turtle hit the car"""
         self.goto(0,0)
-        self.write("GAME OVER", align="center", font=FONT)
+        self.write( "GAME OVER", align="center", font=FONT)
+        self.goto(0,-20)
+        self.write(f"\nGreat play {name}!! You are at the level {level}", align="center", font=FONT)

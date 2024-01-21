@@ -1,5 +1,5 @@
 from turtle import Turtle
-
+from scoreboard import FONT
 STARTING_POSITION = (0, -280)
 MOVE_DISTANCE = 10
 FINISH_LINE_Y = 280
@@ -28,10 +28,6 @@ class Player(Turtle):
             x += MOVE_DISTANCE
             self.setx(x)
 
-    def go_right(self):
-        x = self.xcor()
-        y = -20
-
     def go_to_start(self):
         """Get the player to back to the starting position"""
         self.goto(STARTING_POSITION)
@@ -42,3 +38,4 @@ class Player(Turtle):
             return True
         else:
             return False
+
