@@ -4,13 +4,10 @@ Welcome to the Turtle Race Game! 🚗🐢 Race your turtle across the road while
 ## How to Play 🎮
 ### 1. Controls:
 
-Use the Up Arrow key to move the turtle upwards.
-
-Use the Down Arrow key to move the turtle downwards.
-
-Use the Left Arrow key to move the turtle to the left.
-
-Use the Right Arrow key to move the turtle to the right.
+- ⬆️ UP arrow key: Move the turtle up
+- ⬇️ DOWN arrow key: Move the turtle down
+- ⬅️ LEFT arrow key: Move the turtle left
+- ➡️ RIGHT arrow key: Move the turtle right
 
 ### 2. Objective:
 
@@ -25,26 +22,25 @@ With each level, the game gets more challenging as cars move faster.
 
 ## Installation 🛠️
 Clone the repository:
-`bash
-git clone https://github.com/your_username/turtle-race-game.git
-`
+
+    
+    git clone https://github.com/YNhuLe/turtle-race-game.git
+
+#### Navigate to the project
+ 
+    cd turtle-race-game
+
+#### Install the required dependencies:
 
 
-`
-bash 
-cd turtle-race-game`
+    pip install pygame
 
-Install the required dependencies:
-`
-bash
-pip install pygame
-`
 
-Run the game:
-`
-bash
-python main.py
-`
+#### Run the game:
+
+
+    python main.py
+
 
 *Dependencies 📚*
 
@@ -64,4 +60,4 @@ Feel free to contribute to make this game even more entertaining! Open an issue,
 ### Have Fun and Happy Racing! 🏎️🐢
 
 ## Author 👩‍💻
- [Jenny Le]
+ ### *[Jenny Le]*
