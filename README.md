@@ -5,8 +5,11 @@ Welcome to the Turtle Race Game! 🚗🐢 Race your turtle across the road while
 ### 1. Controls:
 
 Use the Up Arrow key to move the turtle upwards.
+
 Use the Down Arrow key to move the turtle downwards.
+
 Use the Left Arrow key to move the turtle to the left.
+
 Use the Right Arrow key to move the turtle to the right.
 
 ### 2. Objective:
